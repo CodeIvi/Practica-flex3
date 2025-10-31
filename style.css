@@ -70,6 +70,10 @@ i{
     font-size: 30px;
 }
 
+
+
+/*** NAV3 ***/
+
 .nav3{
     background-color: blue;
     color: white;
@@ -96,13 +100,13 @@ i{
 
 
 
-#dropdown{
+#dropdown1{
     position: relative;
-    background-color: rgb(24, 42, 133);
+    background-color: blue;
 }
 
 
-#dropdown ul{
+#dropdown1 ul{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -119,16 +123,79 @@ i{
     
 }
 
-#dropdown ul li{
+#dropdown1 ul li{
  padding: 10px;
  
 }
 
-#dropdown:hover ul {
+#dropdown1:hover{
+    background-color:  rgb(24, 42, 133);
+}
+#dropdown1:hover ul {
   display: block;
 }
 
 
+/*** NAV4 ***/
+
+.nav4{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+
+}
+
+
+/*** NAV5 ***/
+
+.nav5{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.nav5 ul{
+    list-style: none;
+    @media  screen and (min-width:480px){
+        
+    }
+}
+
+.nav5 ul li{
+    padding: 10px;
+}
+
+.dropdown2{
+    position: relative;
+}
+
+.dropdown2 ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    @media screen and(min-width:480px){
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    left: 0;
+    }
+
+}
+
+.dropdown2 ul li{
+    padding: 10px;
+}
+
+.dropdown2:hover .dropdown2 ul{
+    display: block;
+}
 
 
 
