@@ -102,7 +102,13 @@ i{
 
 #dropdown1{
     position: relative;
+   background-color:blue;
+
+   @media screen and (min-width:480px){
     background-color: blue;
+  
+
+}
 }
 
 
@@ -115,8 +121,9 @@ i{
     @media screen and (min-width:480px){
         width: 100%;
         left: 0;
+        top: 100%;
         position: absolute;
-        background-color: rgb(24, 42, 133);
+        background-color: orangered;
         display: none;
         box-sizing: border-box;
         }
@@ -134,6 +141,9 @@ i{
 #dropdown1:hover ul {
   display: block;
 }
+#dropdown1 ul li:hover{
+    background-color:  orangered
+}
 
 
 /*** NAV4 ***/
@@ -148,6 +158,9 @@ i{
     padding: 20px;
 
 }
+.nav4 div{
+    padding-top: 10px;
+}
 
 
 /*** NAV5 ***/
@@ -160,15 +173,24 @@ i{
     color: white;
 }
 
-.nav5 ul{
+.ulnav5{
     list-style: none;
     @media  screen and (min-width:480px){
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
         
     }
 }
 
-.nav5 ul li{
-    padding: 10px;
+.ulnav5 li{
+  flex-grow: 1;
+  padding: 10px;
+ 
+}
+
+.nav5 div i{
+    padding-top: 20px;
 }
 
 .dropdown2{
@@ -179,12 +201,15 @@ i{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    @media screen and(min-width:480px){
+    @media screen and (min-width:480px){
+    background-color: orangered;
     display: none;
     position: absolute;
     box-sizing: border-box;
     width: 100%;
     left: 0;
+    top: 100%;
+
     }
 
 }
@@ -193,7 +218,7 @@ i{
     padding: 10px;
 }
 
-.dropdown2:hover .dropdown2 ul{
+.dropdown2:hover  ul{
     display: block;
 }
 
