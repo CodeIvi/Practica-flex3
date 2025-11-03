@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-<body class="contenedor">
 
+ 
+<body >
+<div id="columnas">
+    <div class="contenedor">
     <h1>Menú Sencillo</h1>
 
     <nav class="contenedor nav1">
-        <ul>
+        <ul class = "ulIguales">
             <li>Inicio</li>
             <li>Nosotros</li>
             <li>Servicios</li>
@@ -28,55 +31,58 @@
     
     <nav class="contenedor nav2">
         <ul>
-            <li>
-                <i class="fa-solid fa-house-chimney"></i>
-                <section>
-                    <h2>Inicio</h2>
-                    <p>Página Principal</p>
-                </section>
-            </li>
+            <div class="grupo">
+                <li >
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <section>
+                        <h2>Inicio</h2>
+                        <p>Página Principal</p>
+                    </section>
+                </li>
 
     
-            <li>
-                <i class="fa-solid fa-envelope"></i>
-                <section>
-                    <h2>Contacto</h2>
-                    <p>Escribe aquí</p>
-                </section>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <section>
+                        <h2>Contacto</h2>
+                        <p>Escribe aquí</p>
+                    </section>
             
-            </li>
-            <li>
-                <i class="fa-solid fa-dollar-sign"></i>
-                <section>
-                    <h2>Tienda Virtual</h2>
-                    <p>Adquiere nuestros artículos</p>
-                </section>
-            </li>
+                </li>
+            </div>
+            <div class="grupo">
+                <li>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <section>
+                        <h2>Tienda Virtual</h2>
+                        <p>Adquiere nuestros artículos</p>
+                    </section>
+                </li>
 
-            <li>
-                <i class="fa-solid fa-question"></i>
-                 <section>
-                    <h2>Asistencia</h2>
-                    <p>¿Necesitas ayuda?</p>
-                </section>
-            </li>
+                <li>
+                    <i class="fa-solid fa-question"></i>
+                    <section>
+                        <h2>Asistencia</h2>
+                        <p>¿Necesitas ayuda?</p>
+                     </section>
+                </li>
+            </div>
         </ul>
     </nav>
 
     <h1>Dropdown Menu</h1>
 
     <nav class="contenedor nav3">
-        <ul  class="nav5ul">
+        <ul  class="ulIguales">
             <li>Inicio</li>
             <li id="dropdown1"> Nosotros
-               
                 <ul>
                     <li>Misión</li>
                     <li>Visión</li>
                     <li>Valores</li>
                 </ul>
             </li>
-            <li>Tienda Virutal</li>
+            <li>Tienda Virtual</li>
             <li>Asistencia</li>
 
         </ul>
@@ -97,7 +103,7 @@
     <h1>Dropdown Menu con Redes Sociales</h1>
 
     <nav class="contenedor nav5">
-        <ul class="ulnav5">
+        <ul class="ulIguales">
             <li>Inicio</li>
             <li class="dropdown2">Nosotros
                  <ul>
@@ -113,8 +119,6 @@
                     <li>Producto3</li>
                 </ul>  
             </li>
-            <li>Servicios</li>
-            <li>Contacto</li>
             <li>Asistencia</li>
         </ul>
         
@@ -129,7 +133,8 @@
         
     </nav>
 
-
+</div>
+</div>
     
 </body>
 </html>

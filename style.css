@@ -1,8 +1,22 @@
-.contenedor{
-    max-width: 1000px;
-    margin: 0 auto;
+
+body{
+    padding-left: 50px;
+}
+#columnas{
+    background-color: white;
+
+    @media screen and (min-width:768px){
+        background: linear-gradient(to right, #ff6666, #f0f0f0, #ffa366);
+
+    }
 }
 
+.contenedor{
+    max-width:1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+}
 
  /*** Navegador1 ****/
 
@@ -12,25 +26,36 @@
     padding: 20px;
 }
 
-.nav1 ul{
+.ulIguales{
     display: flex;
     flex-direction: column;
     list-style: none;
 
-    @media screen and (min-width:480px){
+    @media screen and (min-width:768px){
     flex-direction: row;
-
+    
 }
 
 }
+
+.ulIguales li:hover{
+    background-color:  rgb(24, 42, 133);
+}
+
+
 .nav1 ul li{
-    flex-grow: 1;
+    display: flex;
+    justify-content: center;
     padding: 10px;
-    @media screen and (min-width:480px){
+    @media screen and (min-width:768px){
     padding: 0;
+    flex-grow: 1;
+    font-size: 25px;
     }
     
 }
+
+
 
 /*** Navegador 2 ***/
 
@@ -42,32 +67,43 @@
 .nav2 ul{
     display: flex;
     flex-direction: column;
-
+    list-style: none;
     @media screen and (min-width:480px){
-    flex-direction: row;
-    flex-wrap: wrap;
-    }
-
-    @media screen and (min-width: 768px){
         flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.grupo{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    @media screen and (min-width:768px){
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+}
+.grupo li{
+    display: flex;
+    flex-direction: row;
+    @media  screen and (min-width:768px) {
+        justify-content: center;
+        flex-grow: 1;
         
     }
 }
 
-
-.nav2 ul li{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-grow: 1;
-    
+i{     
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 32px;
 }
 
-i{      
-    align-items: flex-start;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    font-size: 30px;
+.grupo li:hover{
+    background-color: rgb(24, 42, 133);
 }
 
 
@@ -78,33 +114,25 @@ i{
     background-color: blue;
     color: white;
 }
-.nav3 ul{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    @media screen and (min-width:480px){
-    flex-direction: row;
-    font-size: 20px;
-    }
-    
 
-}
 
-.nav3 ul li{
+
+.ulIguales  li{
+    padding: 10px;
+
+    @media screen and (min-width:768px){
+    font-size: 25px;
     flex-grow: 1;
-    list-style: none;
-    padding: 15px;
+    justify-content: center;
+    }
 }
-
-
-
 
 
 #dropdown1{
     position: relative;
    background-color:blue;
 
-   @media screen and (min-width:480px){
+   @media screen and (min-width:768px){
     background-color: blue;
   
 
@@ -115,7 +143,6 @@ i{
 #dropdown1 ul{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     list-style: none;
 
     @media screen and (min-width:480px){
@@ -130,13 +157,11 @@ i{
     
 }
 
-#dropdown1 ul li{
- padding: 10px;
- 
-}
+
+
 
 #dropdown1:hover{
-    background-color:  rgb(24, 42, 133);
+    background-color: rgb(24, 42, 133);
 }
 #dropdown1:hover ul {
   display: block;
@@ -155,11 +180,10 @@ i{
     align-items: center;
     background-color: blue;
     color: white;
-    padding: 20px;
 
 }
 .nav4 div{
-    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 
@@ -172,20 +196,11 @@ i{
     justify-content: space-between;
     color: white;
 }
+ 
 
-.ulnav5{
-    list-style: none;
-    @media  screen and (min-width:480px){
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-        
-    }
-}
-
-.ulnav5 li{
+.nav5 .ulIguales li{
   flex-grow: 1;
-  padding: 10px;
+  padding: 20px;
  
 }
 
@@ -200,8 +215,9 @@ i{
 .dropdown2 ul{
     display: flex;
     flex-direction: column;
+    list-style: none;
     padding: 10px;
-    @media screen and (min-width:480px){
+    @media screen and (min-width:768px){
     background-color: orangered;
     display: none;
     position: absolute;
@@ -220,6 +236,10 @@ i{
 
 .dropdown2:hover  ul{
     display: block;
+}
+
+.dropdown2 ul li:hover{
+    background-color:orangered;
 }
 
 
