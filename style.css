@@ -2,6 +2,8 @@
 body{
     padding-left: 50px;
 }
+
+
 #columnas{
     background-color: white;
 
@@ -18,13 +20,7 @@ body{
     padding: 20px;
 }
 
- /*** Navegador1 ****/
-
-.nav1{
-    background-color:blue;
-    color: white;
-    padding: 20px;
-}
+/*** ESTILO PARA NAVEGADORES IGUALES ***/
 
 .ulIguales{
     display: flex;
@@ -35,11 +31,30 @@ body{
     flex-direction: row;
     
 }
+}
 
+.ulIguales  li{
+    padding: 10px;
+
+    @media screen and (min-width:768px){
+    font-size: 25px;
+    flex-grow: 1;
+    justify-content: center;
+    }
 }
 
 .ulIguales li:hover{
     background-color:  rgb(24, 42, 133);
+}
+
+
+
+ /*** Navegador1 ****/
+
+.nav1{
+    background-color:blue;
+    color: white;
+    padding: 20px;
 }
 
 
@@ -70,7 +85,6 @@ body{
     list-style: none;
     @media screen and (min-width:480px){
         flex-direction: row;
-        justify-content: center;
         flex-wrap: wrap;
     }
 }
@@ -79,18 +93,14 @@ body{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding: 10px;
-    @media screen and (min-width:768px){
+    @media screen and (min-width:480px){
         flex-direction: row;
-        justify-content: center;
-        
     }
 }
 .grupo li{
     display: flex;
     flex-direction: row;
-    @media  screen and (min-width:768px) {
-        justify-content: center;
+    @media  screen and (min-width:480px) {
         flex-grow: 1;
         
     }
@@ -113,18 +123,6 @@ i{
 .nav3{
     background-color: blue;
     color: white;
-}
-
-
-
-.ulIguales  li{
-    padding: 10px;
-
-    @media screen and (min-width:768px){
-    font-size: 25px;
-    flex-grow: 1;
-    justify-content: center;
-    }
 }
 
 
