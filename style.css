@@ -145,8 +145,7 @@ i{
 
 
 .dropdown1 ul{
-    display: none;
-    position: relative;
+    display: flex;
     flex-direction: column;
     list-style: none;
 
@@ -183,6 +182,7 @@ i{
     display: flex;
     flex-direction: row;
     justify-content: end;
+    flex-wrap: wrap;
     align-items: center;
     background-color: blue;
     color: white;
